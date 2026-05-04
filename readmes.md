@@ -1,4 +1,4 @@
-Automated Web Data Pipeline with API-Based Orchestration
+<!-- Automated Web Data Pipeline with API-Based Orchestration -->
 
 The increasing availability of web data has made automated data pipelines an essential component of modern data engineering systems. Organizations often require systems that can collect data from external sources, process and clean the data, perform analytical calculations, and generate structured reports automatically. This project implements an automated web data pipeline that performs these tasks through a modular architecture and exposes the functionality through an API service. The system is built using Python and the web framework FastAPI, which allows users to trigger the pipeline programmatically.
 
@@ -111,7 +111,7 @@ Overall, this project demonstrates the design and implementation of a modular da
 
 
 
-        <!-- Folder Architecture of the Project -->
+<!-- Folder Architecture of the Project -->
 
 
 automation_pipeline/
@@ -147,7 +147,7 @@ automation_pipeline/
 
 
 
-Component
+<!-- Component -->
 FastAPI
 Airflow
 BeautifulSoup
@@ -157,7 +157,7 @@ Local Reports
 
 
 
-Alternative
+<!-- Alternative -->
 Flask / Django
 Prefect / Luigi
 Scrapy
