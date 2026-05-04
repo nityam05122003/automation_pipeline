@@ -38,27 +38,14 @@ def run_with_retry(task, task_name):
             time.sleep(RETRY_DELAY)
 
 
-def run_pipeline():
-
-    print("Starting Pipeline...")
-
-    run_with_retry(run_crawler, "Crawler")
-    print("Crawling Completed")
-
-    run_with_retry(run_cleaning, "Cleaning")
-    print("Cleaning Completed")
-
-    run_with_retry(run_analysis, "Analytics")
-    print("Analytics Completed")
-
-    print("Pipeline Finished")
-
-
-
-def run_pipeline():
+def run_pipeline(url: str | None = None):
 
     print("Starting DAG Pipeline")
+    if url:
+        print(f"Pipeline received URL: {url}")
 
     execute_dag(dag)
+
+    print("Pipeline Finished")
 
     print("Pipeline Finished")
